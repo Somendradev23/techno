@@ -1,0 +1,104 @@
+<%- include('comp/head') %>
+<!-- banner -->
+<div class="banner" style="height: 200px;">
+    <canvas class="partical" style="position: absolute;width: 100%;height: 100%;z-index: 0;"></canvas>
+    <div class="container">
+        <div class="row" style="padding-top: 70px;">
+            <div class="col s12">
+                <h3 class="center white-text">Contact Us</h3>
+                <hr class="center" width="30%" style="height: 4px;background-color: rgba(37,137,248,1);outline: none;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / / banner -->
+<!-- contact -->
+<div class="contact">
+    <br><br>
+    <div class="row ">
+        
+        <br><br>
+        <div class="col s12 m4 offset-m2">
+            <img class=" responsive-img bounce-img" src="/images/Contact1.svg" alt="">
+            <!-- <br><br>
+                    <h5>Somendra</h5>
+                    <p>
+                        98/10 B road Civil Line, Allahabad, U.P. (India) +911234567890
+                    </p> -->
+        </div>
+        <div class="col s12 m4 offset-m1">
+
+            <form action="/index" method="POST"
+                style="padding: 20px;border: 1px solid rgba(87, 87, 253, 0.507);border-radius: 10px;">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="name" type="text"  class="validate" name="name" >
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" name="email" >
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" name="msg" ></textarea>
+                        <label for="textarea1">Massage</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <input type="submit" value="Submit" class="btn blue darken-2">
+                    </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- / / contact -->
+<hr>
+<!-- How we work -->
+<div class="row">
+    <div class="col s12">
+        <h4 class=" center">How We Design and develop a project</h4>
+        <p class=" container center">
+            We host a comprehensive set of services and frameworks that you expect from a proactive mobile app
+            development company. Be it
+            improving an existing web service or mobile applications with technical and business bottlenecks.
+        </p><br>
+        <hr class="center" width="30%" style="height: 4px;background-color: rgba(37,37,198,1);outline: none;">
+        <br>
+        <div class="owl-carousel workflow">
+            <div class="workflow-box">
+                <span>1</span>
+                <img src="/images/TeamMeeting.svg" alt="">
+                <p>Meeting with Clients</p>
+            </div>
+            <div class="workflow-box">
+                <span>2</span>
+                <img src="/images/Analytics.svg" alt="">
+                <p>Planning And Designing</p>
+            </div>
+            <div class="workflow-box">
+                <span>3</span>
+                <img src="/images/code.svg" alt="">
+                <p>Development</p>
+            </div>
+            <div class="workflow-box">
+                <span>4</span>
+                <img src="/images/testing.svg" alt="">
+                <p>Testing</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / / How we work -->
+
+<%- include('comp/footer') %>
+<%- include('comp/script') %>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+a,
+p {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+p {
+  font-weight: 600;
+  color: #666;
+}
+
+hr {
+  outline: none;
+  border: none;
+}
+
+.banner {
+  position: relative;
+  margin-top: -64px;
+  height: 100vh;
+  background: rgb(37, 37, 198);
+  background: linear-gradient(137deg, rgba(37, 37, 198, 1) 26%, rgba(0, 212, 255, 1) 100%);
+}
+
+.banner .row {
+  padding-top: 60px;
+}
+
+.banner .banner-content {
+  position: relative;
+  margin-top: 60px;
+  z-index: 1;
+}
+
+.banner .banner-img,
+.bounce-img {
+  position: relative;
+  width: 100%;
+  animation: bounce 4s linear infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.wave-banner {
+  /* overflow: hidden; */
+  background-position-y: 0px;
+  background-size: cover !important;
+  animation: back 1.6s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes back {
+  from {
+    background-position-y: -300px ;
+  }
+  to{
+    background-position-y: 0px ;
+  }
+}
+
+.input-field {
+  margin: 0 !important;
+}
+
+nav {
+  transition: 0.6s;
+}
+
+/* contact */
+.contact {
+
+  padding-bottom: 20px;
+}
+
+/* Service-box */
+.Service-box {
+  margin-top: 20px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid rgb(117, 117, 243);
+  border-radius: 10px;
+  box-shadow: -3px 3px 10px #666;
+  transition: 0.6s;
+  min-height: 350px;
+}
+
+.Service-box:hover {
+  background-color: rgba(216, 216, 250, 0.616);
+  transform: translateY(-15px);
+}
+
+.Service-box img {
+  height: 100px;
+}
+
+.Service-box a {
+  background-color: rgba(164, 164, 248, 0.466);
+  border: 1px solid rgba(113, 113, 247, 0.616);
+  color: rgb(73, 73, 247);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.Service-box a:hover {
+  background-color: rgb(66, 66, 245);
+  color: white;
+}
+
+.workflow-box {
+  border: 1px solid blue;
+  padding: 20px;
+}
+
+.workflow-box span {
+  position: absolute;
+  background-color: blue;
+  border-radius: 50%;
+  padding: 10px 15px;
+  color: white;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.workflow-box img {
+  position: relative;
+  height: 100px;
+}
